@@ -15,6 +15,9 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .swiper
+    width: 650px
+
   .logo
     width: 132px
   .navbar
@@ -69,7 +72,7 @@
   .card
     width: 340px
     height: 255px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 95%
@@ -199,10 +202,15 @@
     &-slider
       width: 281px
   .activities
+    &-wrapper
+      display: flex
     &__title
       margin-bottom: 36px
   .card
     width: 100%
+  .actitity
+    &__card
+      order: 1
   .reviews
     padding-bottom: 50px
     &__title
@@ -217,13 +225,14 @@
       &__button
         top: 45px
         &--prev
-          left: 50%
+          left: 30%
+
           transform: translate(-50%, 0)
-          margin-left: -61px
+
         &--next
-          right: 50%
+          right: 30%
           transform: translate(50%, 0)
-          margin-right: -60px
+          top: 46px
   .activities
     padding-bottom: 60px
     &__title
