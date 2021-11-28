@@ -760,6 +760,7 @@ template {
   padding: 46px 21px 30px 43px;
   color: #fff;
   border-radius: 0px 8px 8px 0px;
+  height: 500px;
 }
 .descriptions__rating {
   flex-basis: 100%;
@@ -916,6 +917,34 @@ template {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+}
+
+.image-block {
+  position: relative;
+}
+
+.package-offer,
+.package-offer-first {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #EC1F46;
+  color: #fff;
+}
+
+.package-offer-first {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 8px 12px 7px 11px;
+}
+
+.package-offer {
+  font-style: normal;
+  font-size: 8px;
+  line-height: 10px;
+  padding: 4px 9px 4px 9px;
 }
 
 .newsletter {
@@ -1202,8 +1231,7 @@ template {
   }
 }
 @media (max-width: 992px) {
-  .container,
-.newsletter-wrapper {
+  .newsletter-wrapper {
     max-width: 700px;
   }
 
