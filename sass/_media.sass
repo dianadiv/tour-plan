@@ -11,9 +11,23 @@
     width: 230px
     height: 230px
   .packages
-    &-wrapper
-      margin: auto
-
+    &-block
+      grid-template-columns: 300px 300px 300px
+  .packages-block__first
+    grid-template-columns: 300px 300px
+  .image
+    &-block
+      &-first
+        width: 300px
+  .package
+    &__photo
+      height: 100%
+      object-fit: cover
+      &-first
+        height: 100%
+        object-fit: cover
+  .descriptions
+    width: 330px
   .reviews
     &-slider
       &__username
@@ -25,7 +39,17 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
-
+  .packages
+    &-block
+      grid-template-columns: 335px 335px
+  .packages-block__first
+    grid-template-columns: 335px 335px
+  .image
+    &-block
+      &-first
+        width: 335px
+  .descriptions
+    width: 365px
   .logo
     width: 132px
   .navbar
