@@ -14,7 +14,7 @@
     margin: auto
     display: grid
     grid-template-rows: 500px 500px
-    grid-template-columns: 350px 350px 350px
+    grid-template-columns: repeat(3, 1fr)
     column-gap: 30px
     row-gap: 30px
     &__first
@@ -30,6 +30,7 @@
 .package
   &__photo
     border-radius: 8px 8px 0 0
+    height: 100%
     &-first
       border-radius: 8px 0 0 8px
   &-description

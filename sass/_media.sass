@@ -12,7 +12,7 @@
     height: 230px
   .packages
     &-block
-      grid-template-columns: 300px 300px 300px
+      grid-template-columns: repeat(3, 1fr)
   .packages-block__first
     grid-template-columns: 300px 300px
   .image
@@ -28,6 +28,9 @@
         object-fit: cover
   .descriptions
     width: 330px
+    &__text
+      &__first
+        line-height: 145.6%
   .reviews
     &-slider
       &__username
@@ -43,15 +46,15 @@
     &-block
       grid-template-columns: 335px 335px
   .packages-block__first
-    grid-template-columns: 335px 335px
+    grid-template-columns: 1fr 1fr
   .logo
     width: 132px
   .image
     &-block
       &-first
-        width: 335px
+        width: 100%
   .descriptions
-    width: 365px
+    width: 100%
   .navbar
     &-top
       padding-top: 30px
@@ -190,7 +193,7 @@
     &__user
       flex-direction: column
       justify-content: center
-  .navbar__mobile_fixed
+  .navbar_mobile_fixed
     position: fixed
     top: 0
     right: 0
@@ -221,7 +224,7 @@
     &__text
       &__first
         display: none
-  .description
+  .descriptions
     &__rating
       &__first
         display: none
