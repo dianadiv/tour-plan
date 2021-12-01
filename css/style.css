@@ -1658,6 +1658,52 @@ template {
   .packages-block {
     grid-template-columns: 1fr;
   }
+  .packages-block__first {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-block-first {
+    width: 100%;
+    height: 250px;
+  }
+
+  .descriptions {
+    width: 100%;
+    height: 250px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    border-radius: 0 0 8px 8px;
+  }
+  .descriptions__title {
+    margin-bottom: 23px;
+  }
+  .descriptions__room {
+    margin-bottom: 24px;
+  }
+  .descriptions__text__first {
+    display: none;
+  }
+
+  .description__rating__first {
+    display: none;
+  }
+
+  .package {
+    max-width: 576px;
+  }
+  .package__photo {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .package__photo-first {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
 
   .menu-button {
     display: flex;
