@@ -1270,7 +1270,7 @@ template {
   flex-wrap: wrap;
 }
 .footer__information {
-  grid-row: 6/7;
+  grid-row: 7/8;
   grid-column: 2/5;
   display: flex;
   justify-content: space-between;
@@ -1387,6 +1387,21 @@ template {
 }
 .footer__legal {
   padding-left: 50px;
+}
+.footer__tel {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+.footer__mail {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #BDBDBD;
 }
 
 @media (max-width: 1200px) {
@@ -1566,7 +1581,7 @@ template {
     grid-row: 1/2;
     grid-column: span 4;
     align-self: center;
-    margin-left: -30px;
+    margin-left: -50px;
   }
   .footer__categories {
     grid-row: 2/3;
@@ -1588,6 +1603,7 @@ template {
   .footer__contact-details {
     grid-column: span 5;
     grid-row: 3;
+    margin-top: 23px;
   }
   .footer__contact-form {
     grid-column: span 5;
@@ -1597,6 +1613,7 @@ template {
     grid-column: span 6;
     grid-row: 5;
     display: flex;
+    margin-top: 25px;
   }
   .footer__bottom {
     margin-left: 0;
@@ -1906,6 +1923,9 @@ template {
     max-width: 280px;
   }
 
+  .activities {
+    padding-bottom: 40px;
+  }
   .activities__title {
     margin-bottom: 36px;
   }
@@ -1940,11 +1960,7 @@ template {
     transform: translate(50%, 0);
     top: 43px;
   }
-
-  .activities {
-    padding-bottom: 60px;
-  }
-  .activities__title {
+  .reviews__title {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -2005,6 +2021,7 @@ template {
   .footer__contact-details {
     grid-row: 6;
     grid-column: 1;
+    margin-top: 0;
   }
   .footer__contact-form {
     grid-row: 7;
@@ -2028,11 +2045,18 @@ template {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
   }
   .footer__bottom {
     margin-bottom: 10px;
   }
   .footer__payment {
     width: 136px;
+  }
+  .footer__icon-wrapper {
+    min-width: 27px;
+  }
+  .footer__send {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
