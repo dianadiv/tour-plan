@@ -1271,22 +1271,28 @@ template {
   flex-wrap: wrap;
 }
 .footer__information {
-  grid-row: 7/8;
+  grid-row: 6/7;
   grid-column: 2/5;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #fff;
   text-decoration: none;
+  padding-top: 22px;
 }
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 283px;
   margin-left: 150px;
+}
+.footer__payment {
+  padding-top: 22px;
 }
 .footer__ul {
   padding: 0;
@@ -1312,6 +1318,7 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  line-height: 23px;
 }
 .footer__item {
   display: flex;
@@ -1618,6 +1625,7 @@ template {
     grid-row: 5;
     display: flex;
     margin-top: 25px;
+    padding-top: 0;
   }
   .footer__bottom {
     margin-left: 0;
@@ -1646,6 +1654,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     flex-direction: column;
@@ -1859,9 +1868,15 @@ template {
     width: 99px;
   }
 
+  .navbar-bottom {
+    top: 69px;
+  }
   .navbar-top {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+  .navbar .search__input {
+    width: 100%;
   }
 
   .breadcrumb-list {
@@ -2050,6 +2065,7 @@ template {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+    align-items: normal;
   }
   .footer__bottom {
     margin-bottom: 10px;
@@ -2061,6 +2077,9 @@ template {
     min-width: 27px;
   }
   .footer__send {
-    margin-top: 30px;
+    margin-top: 10px;
+  }
+  .footer__message {
+    margin-bottom: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
