@@ -22,6 +22,35 @@ img {
   max-width: 100%;
 }
 
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0px 23px;
+  height: 50px;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1345,11 +1374,6 @@ template {
   color: #BDBDBD;
 }
 .footer__input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0px 23px;
-  height: 50px;
   margin-bottom: 15px;
   flex-basis: 48%;
   font-style: normal;
@@ -1359,10 +1383,6 @@ template {
   color: #BDBDBD;
 }
 .footer__message {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
   flex-basis: 100%;
   margin-bottom: 23px;
   height: 123px;
@@ -1372,19 +1392,6 @@ template {
   line-height: 15px;
   color: #BDBDBD;
   resize: none;
-}
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: #fff;
-  background-color: #EC1F46;
-  border: none;
-  border-radius: 4px;
 }
 .footer__info {
   font-style: normal;
@@ -1410,6 +1417,103 @@ template {
   font-weight: normal;
   font-size: 14px;
   color: #BDBDBD;
+}
+.footer__backhome {
+  margin-bottom: 60px;
+}
+
+.footer__input, .footer__message {
+  color: #0A223D;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.modal__overlay {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+.modal__close {
+  position: absolute;
+  right: 18px;
+  top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+.modal__message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+  resize: none;
+  color: #BDBDBD;
+}
+.modal__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.modal__info {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+.modal__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {
@@ -1626,6 +1730,9 @@ template {
     display: flex;
     margin-top: 25px;
     padding-top: 0;
+  }
+  .footer__infobottom {
+    margin: 0;
   }
   .footer__bottom {
     margin-left: 0;
