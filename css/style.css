@@ -1268,6 +1268,7 @@ template {
   align-items: start;
 }
 .footer__logo {
+  display: flex;
   width: 166px;
   grid-row: 1/3;
   align-self: stretch;
@@ -1311,7 +1312,7 @@ template {
   line-height: 15px;
   color: #fff;
   text-decoration: none;
-  padding-top: 22px;
+  padding-top: 21px;
 }
 .footer__bottom {
   display: flex;
@@ -1420,6 +1421,9 @@ template {
 }
 .footer__backhome {
   margin-bottom: 60px;
+}
+.footer__infobottom {
+  padding-top: 0;
 }
 
 .footer__input, .footer__message {
@@ -1756,7 +1760,7 @@ template {
     bottom: 0;
     right: 0;
     left: 0;
-    top: 78px;
+    top: 77px;
     padding-top: 30px;
   }
   .navbar-bottom--visible {
@@ -2179,6 +2183,7 @@ template {
   }
   .footer__payment {
     width: 136px;
+    padding-top: 0;
   }
   .footer__icon-wrapper {
     min-width: 27px;

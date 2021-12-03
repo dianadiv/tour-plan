@@ -46,4 +46,11 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  var modal = $('.modal');
+  $(document).keydown(function(event) { 
+  if (event.keyCode == 27) { 
+    $('.modal').hide(); 
+  }
 });
+});
+ 
