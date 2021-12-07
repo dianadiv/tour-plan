@@ -1055,6 +1055,7 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #0A223D;
+  border-radius: 4px;
 }
 .subscribe__button {
   position: absolute;
@@ -1065,6 +1066,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  border-radius: 0 4px 4px 0;
 }
 .subscribe__button {
   font-style: normal;
