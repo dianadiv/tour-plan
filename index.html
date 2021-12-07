@@ -8,6 +8,7 @@
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,19 +21,19 @@
 <body>
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
-      <div class="navbar-top">
-        <a href="index.html" class="logo">
+      <div class="navbar-top"  >
+        <a href="index.html" class="logo" data-aos="fade-up" data-aos-delay="100">
           <img src="img/horizontal-logo.png" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-up" data-aos-delay="300">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.png" alt="Icon: search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-up" data-aos-delay="400">
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -207,7 +208,7 @@
     <div class="container">
       <h2 class="packages__title">Other Packages</h2>
       <div class="packages-block">
-        <div class="packages-block__first package">
+        <div class="packages-block__first package" data-aos="fade-up-right" data-aos-delay="100">
           <div class="image-block-first">
             <img src="img/package-1.jpg" alt="Photo: package first" class="package__photo-first">
             <span class="package-offer-first">Flash Offer</span>
@@ -253,7 +254,7 @@
           </div>
         </div>
         <!-- /.packages-option -->
-        <div class="packages-block__second package">
+        <div class="packages-block__second package" data-aos="fade-up-right" data-aos-delay="300">
           <div class="image-block">
             <img src="img/package-2.jpg" alt="Photo: package second" class="package__photo">
             <span class="package-offer">Flash Offer</span>
@@ -286,7 +287,7 @@
           </div>
         </div>
         <!-- /.packages-option -->
-        <div class="packages-block__third package">
+        <div class="packages-block__third package" data-aos="fade-up-right" data-aos-delay="100">
           <div class="image-block">
             <img src="img/package-3.jpg" alt="Photo: package third" class="package__photo">
             <span class="package-offer">Flash Offer</span>
@@ -319,7 +320,7 @@
           </div>
         </div>
         <!-- /.packages-option -->
-        <div class="packages-block__fourth package">
+        <div class="packages-block__fourth package" data-aos="fade-up-right" data-aos-delay="300">
           <div class="image-block">
             <img src="img/package-4.jpg" alt="Photo: package fourth" class="package__photo">
             <span class="package-offer">Flash Offer</span>
@@ -352,7 +353,7 @@
           </div>
         </div>
         <!-- /.packages-option -->
-        <div class="packages-block__fifth package">
+        <div class="packages-block__fifth package" data-aos="fade-up-right" data-aos-delay="500">
           <div class="image-block">
             <img src="img/package-5.jpg" alt="Photo: package fifth" class="package__photo">
             <span class="package-offer">Flash Offer</span>
@@ -508,35 +509,35 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card  card-first activities__card">
+        <div class="card  card-first activities__card" data-aos="fade-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner<br>of chamarel</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
           <!-- /.card__button -->
         </div>
         <!-- /.card -->
-        <div class="card card-second activities__card">
+        <div class="card card-second activities__card" data-aos="fade-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf<br>course</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
           <!-- /.card__button -->
         </div>
         <!-- /.card -->
-        <div class="card card-third activities__card">
+        <div class="card card-third activities__card" data-aos="fade-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking<br>trip - full day</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
           <!-- /.card__button -->
         </div>
         <!-- /.card -->
-        <div class="card card-fourth activities__card">
+        <div class="card card-fourth activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery<br>quest</h3>
           <!-- /.card__title -->
-          <button class="card__button">Book Now</button>
+          <button data-toggle="modal" class="card__button">Book Now</button>
           <!-- /.card__button -->
         </div>
         <!-- /.card -->
@@ -717,6 +718,7 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
