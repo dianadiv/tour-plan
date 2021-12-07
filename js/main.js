@@ -77,6 +77,11 @@ $(document).ready(function () {
 });
   })
 
+  $('.newsletter').parallax({
+    imageSrc: "img/newsletter-bg.jpg",
+    speed: 0.5,
+  });
+
 
   $(document).ready(function(){
     $('.phone').mask('+7 (999) 999-99-99');
