@@ -71,6 +71,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "The phone number must be eleven characters"
         },
   }
 });
