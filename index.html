@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-    rel="preload">
+    rel="stylesheet">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -679,8 +679,10 @@
               placeholder="Message"
               name="message" 
               ></textarea>
-            <button class="button footer__button" type="submit">Send</button>
-            <span class="footer__info">* Required Fields</span>
+            <div class="footer__required">
+              <button class="button footer__button" type="submit">Send</button>
+              <span class="footer__info">* Required Fields</span>
+            </div>
           </form>
         </div>
         <div class="footer__information footer__infobottom">
