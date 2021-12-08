@@ -78,7 +78,7 @@ $(document).ready(function () {
   })
 
   $('.newsletter').parallax({
-    imageSrc: "img/newsletter-bg.jpg",
+    imageSrc: "img/newsletter-bg.webp",
     speed: 0.5,
   });
 
