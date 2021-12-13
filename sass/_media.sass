@@ -44,6 +44,9 @@
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .navbar-menu
+    padding-right: 15px
+    padding-left: 15px
   .packages
     &-block
       grid-template-columns: 335px 335px
@@ -130,7 +133,8 @@
       grid-row: 1 / 2
       grid-column: span 2
       width: 104px
-      height: 120px
+      height: 118px
+      padding-bottom: 15px
     &__social
       &-network
         grid-row: 1 / 2
@@ -142,12 +146,12 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
-      padding-left: 30px
+      padding-left: 20px
       white-space: nowrap
     &__additional
       grid-column: span 2
       white-space: nowrap
-      margin-left: -20px
+      margin-left: -39px
     &__form
       width: 539px
     &__contact
@@ -181,6 +185,9 @@
   .container
     max-width: 576px
     width: 95%
+  .navbar-menu
+    padding-right: 0
+    padding-left: 0
   body
     padding-top: 78px
   .navbar
@@ -349,6 +356,9 @@
       white-space: normal
     &__additional
       white-space: normal
+      margin-left: -10px
+    &__logo
+      padding-bottom: 0px
   .modal
     &__dialog
       padding: 15px 40px
@@ -541,7 +551,17 @@
 @media (min-width: 992px)
   a:hover
     text-decoration: underline
-  button
+  .search__button,
+  .booking__button,
+  .descriptions__button,
+  .description__button,
+  .subscribe__button,
+  .card__button,
+  .footer__button
     &:hover
       color: $primary
       background: $footer-text-color
+  .hotel-slider__button,
+  .reviews-slider__button
+    &:hover
+      border: 5px solid $footer-text-color
