@@ -1,11 +1,4 @@
-Tour Plan
-
-Учебный проект для практики на курсе Веб Старт от Glo Academy. Автор курса — Артем Исламов.
-
-Проект выполняет
-
-Басенко Диана. Шестнадцатый поток курса Веб Старт. Тариф "Полный фарш" с куратором.
-
-Куратор
-
-Виталий Моренко
+# Landing page for agency Tour Plan
+- Using HTML, SASS, PHP
+  
+[DEMO LINK](https://dianadiv.github.io/tour-plan/)
